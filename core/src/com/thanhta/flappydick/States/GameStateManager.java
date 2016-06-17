@@ -14,7 +14,7 @@ public class GameStateManager {
         states.push(state);
     }
     public void pop(){
-        states.pop();
+        states.pop().dispose();
     }
     //to pop and then push instally another state, use "set"
     public void set(State state){
